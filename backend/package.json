@@ -1,0 +1,48 @@
+{
+  "name": "truck-transport-api",
+  "version": "1.0.0",
+  "description": "Backend API for Truck Transport Application",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "migrate": "node src/migrations/run.js",
+    "seed": "node src/seeds/index.js"
+  },
+  "keywords": [
+    "truck",
+    "transport",
+    "logistics",
+    "booking"
+  ],
+  "author": "Dipanshu",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.0.3",
+    "pg": "^8.10.0",
+    "sequelize": "^6.35.1",
+    "jsonwebtoken": "^9.1.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "express-validator": "^7.0.0",
+    "redis": "^4.6.10",
+    "socket.io": "^4.7.0",
+    "axios": "^1.5.0",
+    "multer": "^1.4.5-lts.1",
+    "stripe": "^13.8.0",
+    "nodemailer": "^6.9.5",
+    "twilio": "^3.98.0",
+    "moment": "^2.29.4",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "sequelize-cli": "^6.6.1"
+  }
+}
